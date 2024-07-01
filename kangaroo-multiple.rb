@@ -1,7 +1,6 @@
 cask "kangaroo-multiple" do
-  version "5.0.0.240611"
-  sha256 "c11e6f3aa3fa7cea30ec52a2c30a1677a337d9e59b248ee04ca1c21b2a0a5890"
-  # sha256 :no_check
+  version "5.1.0.240701"
+  sha256 "18a501f7815b67e49464545674d0de8f92441642de0c627f27a60fec8705d34d"
 
   url "https://github.com/dbkangaroo/kangaroo/releases/download/v#{version}/kangaroo-multiple-#{version}-x86_64.dmg"
   name "Kangaroo multiple"
@@ -9,8 +8,10 @@ cask "kangaroo-multiple" do
   homepage "https://github.com/dbkangaroo/kangaroo"
 
   livecheck do
-    # cask "kangaroo-multiple"
-    # skip "No version information available"
+    # Check main cask to get the latest version
+    # cask "kangaroo-mutiple"
+
+    # Mutiple check github tag to get the latest version
     url :stable
     strategy :github_latest
   end
@@ -21,9 +22,9 @@ cask "kangaroo-multiple" do
   app "kangaroo.app"
 
   zap trash: [
-    "~/Library/Application Support/org.gnome.KangarooDevel",
-    "~/Library/Caches/org.gnome.KangarooDevel",
-    "~/Library/Preferences/org.gnome.KangarooDevel.plist",
-    "~/Library/Saved Application State/org.gnome.KangarooDevel.savedState",
+    "~/Library/Application Support/org.gnome.Kangaroo",
+    "~/Library/Caches/org.gnome.Kangaroo",
+    "~/Library/Preferences/org.gnome.Kangaroo.plist",
+    "~/Library/Saved Application State/org.gnome.Kangaroo.savedState",
   ]
 end
