@@ -1,6 +1,6 @@
 cask "kangaroo-multiple" do
-  version "5.1.0.240701"
-  sha256 "18a501f7815b67e49464545674d0de8f92441642de0c627f27a60fec8705d34d"
+  version "5.3.1.240901"
+  sha256 "b504153f6ef8779f167e092482f0920921ca83007979ab6d1e5b3cd95ac12133"
 
   url "https://github.com/dbkangaroo/kangaroo/releases/download/v#{version}/kangaroo-multiple-#{version}-x86_64.dmg"
   name "Kangaroo multiple"
